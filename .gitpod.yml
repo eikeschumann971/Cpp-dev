@@ -1,10 +1,6 @@
-image: gitpod/workspace-base:latest
+image:
+  file: .gitpod.Dockerfile
 
-tasks:
-  - name: Install boost library
-    init: |
-      sudo apt-get update
-      sudo apt-get install -y libboost-all-dev
 
 # --------------------------------------------------------
 # exposing ports for liveserve
@@ -24,16 +20,10 @@ vscode:
     - yzhang.markdown-all-in-one
     - bungcip.better-toml
     - mhutchie.git-graph
-    - formulahendry.code-runner
-    - PureDevSoftware.FastFind
-    - SonarSource.SonarLintforVisualStudio2019
-    - ms-vscode.cpptools
-    - ms-vscode.cpptools-extension-pack
-    - hars.CppSnippets
     - jbenden.c-cpp-flylint
-    - ms-vscode.cpptools-themes
     - esbenp.prettier-vscode
-    - DevartSoftware.CodeCompare
+    - formulahendry.code-runner
+
     
 # --------------------------------------------------------
 # using prebuilds for the container - note: atm this only
