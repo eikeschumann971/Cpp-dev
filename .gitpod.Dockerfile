@@ -4,9 +4,9 @@ FROM gitpod/workspace-full
 RUN sudo apt-get update && sudo apt-get install -y libboost-all-dev 
 
 # Install cmake
-RUN sudo apt-get install cmake
+RUN sudo apt-get install -y cmake
 
 # Install googletest
-RUN sudo apt-get install googletest
+RUN sudo apt-get install -y googletest
 
 
