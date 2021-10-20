@@ -3,8 +3,8 @@ image: gitpod/workspace-base:latest
 tasks:
   - name: Install boost library
     init: |
-      apt-get update
-      apt-get install -y libboost-all-dev
+      sudo apt-get update
+      sudo apt-get install -y libboost-all-dev
 
 # --------------------------------------------------------
 # exposing ports for liveserve
